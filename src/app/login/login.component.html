@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand" href="#"><img src="assets/img/logo.png" style="height:50px;"></a>
+
+
+
+</nav>
+
+ <div style="text-align:center"> 
+
+<img alt="cannot display" width="150" height="100" src=".\assets\img\logo.png" >
+
+</div>
+
+
+
+ <form ngForm>
+
+<div class="form-group row d-flex justify-content-center">
+	<div class="col-xs-2">
+  <label for="name">Name</label>
+  <input type="text" class="form-control" id="username" required [(ngModel)]="model.username" name="username" #name='ngModel'>
+
+</div></div>
+
+<div class="form-group row d-flex justify-content-center">
+
+	<div class="col-xs-2">
+
+  <label for="password">password</label>
+
+  <input type="password"  class="form-control" id="password"
+
+         [(ngModel)]="model.password" name="password">
+
+</div></div>
+
+<div class="col-xs-2 text-center" >
+
+  <button type="submit" class="btn btn-success" (click)=" loginValidation()">Login</button>
+
+</div>
+
+</form>
+<router-outlet></router-outlet>

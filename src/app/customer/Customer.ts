@@ -1,0 +1,24 @@
+export class Customer{
+	account_no:number;
+	cName:string;
+	cDOB:string;
+	cPhoneNo:number;
+	cUserName:string;
+	cPassword:string;
+	cAmount:number;
+	cBranchId:number;
+	cLoanId:string;
+	cTypeId:string;
+	constructor(account_no:number,cName:string,cDOB:string,cPhoneNo:number,cUserName:string,cPassword:string,cAmount:number,cBranchId:number,cLoanId:string,cTypeId:string){
+		this.account_no=account_no;
+		this.cName=cName;
+		this.cDOB=cDOB;
+		this.cPhoneNo=cPhoneNo;
+		this.cUserName=cUserName;
+		this.cPassword=cPassword;
+		this.cAmount=cAmount;
+		this.cBranchId=cBranchId;
+		this.cLoanId=cLoanId;
+		this.cTypeId=cTypeId;
+	}
+}
